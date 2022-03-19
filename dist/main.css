@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.point{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+.point.visible .label{
+    transform:scale(1,1)
+}
+
+
+.point .label{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    height: 60px;
+    width: 60px;
+    background: #25578477;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    border-radius: 50%;
+    color: #2196f3;
+    text-align: center;
+    font-style: 14px;
+    transform: scale(0,0);
+    transition: 0.3s;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point .label:hover{
+    color:#25578477;
+    background-color: #2196f3;
+    transform: scale(1.5,1.5);
+}
+
+
+
+/*# sourceMappingURL=main.css.map*/
